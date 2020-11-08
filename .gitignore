@@ -24,3 +24,5 @@ target/
 *.zip
 *.tar.gz
 *.rar
+
+test-output/
