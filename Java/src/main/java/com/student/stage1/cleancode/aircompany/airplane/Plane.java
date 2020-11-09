@@ -1,4 +1,4 @@
-package com.student.stage1.cleancode.aircompany.plane;
+package com.student.stage1.cleancode.aircompany.airplane;
 
 import java.util.Objects;
 

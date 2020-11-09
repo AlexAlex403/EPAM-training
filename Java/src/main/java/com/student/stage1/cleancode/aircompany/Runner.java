@@ -1,8 +1,8 @@
 package com.student.stage1.cleancode.aircompany;
+import com.student.stage1.cleancode.aircompany.airplane.MilitaryPlane;
+import com.student.stage1.cleancode.aircompany.airplane.PassengerPlane;
+import com.student.stage1.cleancode.aircompany.airplane.Plane;
 import com.student.stage1.cleancode.aircompany.model.MilitaryType;
-import com.student.stage1.cleancode.aircompany.plane.MilitaryPlane;
-import com.student.stage1.cleancode.aircompany.plane.PassengerPlane;
-import com.student.stage1.cleancode.aircompany.plane.Plane;
 
 import java.util.Arrays;
 import java.util.List;

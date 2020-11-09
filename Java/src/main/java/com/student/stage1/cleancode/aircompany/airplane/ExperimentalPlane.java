@@ -1,4 +1,4 @@
-package com.student.stage1.cleancode.aircompany.plane;
+package com.student.stage1.cleancode.aircompany.airplane;
 
 import com.student.stage1.cleancode.aircompany.model.ClassificationLevel;
 import com.student.stage1.cleancode.aircompany.model.ExperimentalType;
