@@ -1,8 +1,8 @@
 package com.student.stage1.cleancode.aircompany;
-import com.student.stage1.cleancode.aircompany.models.MilitaryType;
-import com.student.stage1.cleancode.aircompany.Planes.MilitaryPlane;
-import com.student.stage1.cleancode.aircompany.Planes.PassengerPlane;
-import com.student.stage1.cleancode.aircompany.Planes.Plane;
+import com.student.stage1.cleancode.aircompany.model.MilitaryType;
+import com.student.stage1.cleancode.aircompany.plane.MilitaryPlane;
+import com.student.stage1.cleancode.aircompany.plane.PassengerPlane;
+import com.student.stage1.cleancode.aircompany.plane.Plane;
 
 import java.util.Arrays;
 import java.util.List;
@@ -28,14 +28,16 @@ public class Runner {
     public static void main(String[] args) {
         Airport airport = new Airport(planes);
         Airport militaryAirport = new Airport(airport.getMilitaryPlanes());
-        Airport passengerAirport = new Airport(airport.getPasPl());
-        System.out.println("Military airport sorted by max distance: " + militaryAirport
-                .sortByMaxDistance()
-                .toString());
-        System.out.println("Passenger airport sorted by max speed: " + passengerAirport
-                .sortByMaxSpeed()
-                .toString());
+        Airport passengerAirport = new Airport(airport.getPassengerPlanes());
+        
+        militaryAirport.sortByMaxDistance();
+        System.out.println("Military airport sorted by max distance: ");
+        militaryAirport.printPlanes();
+        
+        passengerAirport.sortByMaxSpeed();
+        System.out.println("\nPassenger airport sorted by max speed: ");
+        passengerAirport.printPlanes();
 
-        System.out.println("Plane with max passenger capacity: " + passengerAirport.getPassengerPlaneWithMaxPassengersCapacity());
+        System.out.println("\nPlane with max passenger capacity: \n" + passengerAirport.getPassengerPlaneWithMaxPassengersCapacity());
     }
 }
